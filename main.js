@@ -183,8 +183,10 @@ function showProduct(item) {
   clone.querySelector(".power").textContent = item.power;
   clone.querySelector(".good").textContent = item.good;
   clone.querySelector(".height").textContent = item.height;
-  clone.querySelector(".dob").textContent = item.dob;
-  clone.querySelector(".image").textContent = item.image;
+  clone.querySelector(".year").textContent = item.dob.year;
+  clone.querySelector(".month").textContent = item.dob.month;
+  clone.querySelector(".day").textContent = item.dob.day;
+  clone.querySelector("img").src = item.image;
   const parent = document.querySelector("main");
   parent.appendChild(clone);
 }
