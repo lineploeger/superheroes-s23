@@ -174,7 +174,7 @@ const superheroes = [
 ];
 console.table(superheroes);
 
-items.forEach(showProduct);
+superheroes.forEach(showProduct);
 
 function showProduct(item) {
   const template = document.querySelector("template").content;
@@ -184,6 +184,7 @@ function showProduct(item) {
   clone.querySelector(".good").textContent = item.good;
   clone.querySelector(".height").textContent = item.height;
   clone.querySelector(".dob").textContent = item.dob;
+  clone.querySelector(".image").textContent = item.image;
   const parent = document.querySelector("main");
   parent.appendChild(clone);
 }
